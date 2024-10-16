@@ -6,7 +6,7 @@ from mistralai import Mistral
 # Créer une fonction pour générer des réponses
 def generate_response(user_input):
     model = "mistral-large-latest"
-
+    mistralkey = st.secrets["MISTRAL_API_KEY"]
     client = Mistral(api_key=mistralkey)
 
 
